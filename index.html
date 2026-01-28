@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZESS TYRE & TUBE | Drive Your Dream with Safety</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --primary-red: #e60000; --dark-grey: #1a1a1a; --text-white: #ffffff; }
+        body { font-family: 'Roboto', sans-serif; margin: 0; padding: 0; scroll-behavior: smooth; }
+        h1, h2, h3 { font-family: 'Oswald', sans-serif; text-transform: uppercase; }
+        
+        /* Navigation */
+        header { background: var(--dark-grey); color: white; padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; border-bottom: 3px solid var(--primary-red); }
+        .logo { font-size: 24px; font-weight: bold; color: var(--primary-red); }
+        nav a { color: white; text-decoration: none; margin-left: 20px; font-weight: bold; transition: 0.3s; }
+        nav a:hover { color: var(--primary-red); }
+
+        /* Hero Section */
+        .hero { height: 90vh; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1920&q=80'); 
+                background-size: cover; background-position: center; display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; text-align: center; }
+        .hero h1 { font-size: 4rem; margin: 0; color: var(--primary-red); }
+        .hero p { font-size: 1.5rem; margin-top: 10px; }
+
+        /* Products Section */
+        .section { padding: 80px 10%; text-align: center; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; }
+        .card { background: #f9f9f9; padding: 20px; border-radius: 8px; border-bottom: 5px solid transparent; transition: 0.3s; }
+        .card:hover { border-bottom: 5px solid var(--primary-red); transform: translateY(-10px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        .card img { width: 100%; border-radius: 5px; height: 200px; object-fit: cover; }
+        .card h3 { margin-top: 15px; }
+
+        /* CTA Button */
+        .btn { background: var(--primary-red); color: white; padding: 15px 35px; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 30px; display: inline-block; }
+        .btn:hover { background: #b30000; }
+
+        /* Contact Section */
+        #contact { background: #111; color: white; }
+        .footer { background: #000; color: #888; padding: 20px; text-align: center; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">ZESS TYRE & TUBE</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <h1>DRIVE YOUR DREAM WITH SAFETY</h1>
+    <p>Premium Quality Tyres and Tubes for Performance & Durability</p>
+    <a href="#products" class="btn">Explore Our Range</a>
+</section>
+
+<section id="products" class="section">
+    <h2>Our Premium Collection</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1578844541663-4711efaf4e18?auto=format&fit=crop&w=600&q=80" alt="PCR Tyre">
+            <h3>Passenger Car Radial</h3>
+            <p>Maximum grip and comfort for long-distance city and highway driving.</p>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1599256621730-535171e28e50?auto=format&fit=crop&w=600&q=80" alt="Truck Tyre">
+            <h3>Truck & Bus Tyres</h3>
+            <p>Heavy-duty reliability designed for the toughest road conditions.</p>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=600&q=80" alt="Tube">
+            <h3>Automobile Tubes</h3>
+            <p>High-quality butyl tubes ensuring zero leakage and long life.</p>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="section" style="background: #f4f4f4;">
+    <h2>Why Choose ZESS TYRE?</h2>
+    <p style="max-width: 800px; margin: 0 auto;">Zess Tyre & Tube provides high-performance solutions for modern vehicles. Our technology focuses on fuel efficiency, heat resistance, and superior braking performance. From Banglamotor, Dhaka, we serve the entire nation with reliability.</p>
+</section>
+
+<section id="contact" class="section">
+    <h2>Get In Touch</h2>
+    <div style="margin-top: 20px;">
+        <p><i class="fas fa-map-marker-alt"></i> Rupayan Trade Center, Level 6-7, Banglamotor, Dhaka-1000</p>
+        <p><i class="fas fa-phone"></i> +880 1XXX-XXXXXX</p>
+        <p><i class="fas fa-envelope"></i> info@zesstyres.com</p>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>&copy; 2026 ZESS TYRE & TUBE. All Rights Reserved. | Developed by Biswas Computer & Multimedia</p>
+</footer>
+
+</body>
+</html>
